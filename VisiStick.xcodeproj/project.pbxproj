@@ -1,0 +1,528 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3FC3E394224BF6020008DE34 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FC3E393224BF6020008DE34 /* AppDelegate.swift */; };
+		3FC3E396224BF6020008DE34 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FC3E395224BF6020008DE34 /* ViewController.swift */; };
+		3FC3E399224BF6020008DE34 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3FC3E397224BF6020008DE34 /* Main.storyboard */; };
+		3FC3E39B224BF6020008DE34 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3FC3E39A224BF6020008DE34 /* Assets.xcassets */; };
+		3FC3E39E224BF6020008DE34 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3FC3E39C224BF6020008DE34 /* LaunchScreen.storyboard */; };
+		3FC3E3A9224BF6030008DE34 /* VisiStickTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FC3E3A8224BF6030008DE34 /* VisiStickTests.swift */; };
+		3FC3E3B4224BF6030008DE34 /* VisiStickUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FC3E3B3224BF6030008DE34 /* VisiStickUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3FC3E3A5224BF6030008DE34 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3FC3E388224BF6000008DE34 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3FC3E38F224BF6010008DE34;
+			remoteInfo = VisiStick;
+		};
+		3FC3E3B0224BF6030008DE34 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3FC3E388224BF6000008DE34 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3FC3E38F224BF6010008DE34;
+			remoteInfo = VisiStick;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		3FC3E390224BF6020008DE34 /* VisiStick.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VisiStick.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3FC3E393224BF6020008DE34 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		3FC3E395224BF6020008DE34 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		3FC3E398224BF6020008DE34 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		3FC3E39A224BF6020008DE34 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3FC3E39D224BF6020008DE34 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		3FC3E39F224BF6020008DE34 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3FC3E3A4224BF6030008DE34 /* VisiStickTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VisiStickTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3FC3E3A8224BF6030008DE34 /* VisiStickTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VisiStickTests.swift; sourceTree = "<group>"; };
+		3FC3E3AA224BF6030008DE34 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3FC3E3AF224BF6030008DE34 /* VisiStickUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VisiStickUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3FC3E3B3224BF6030008DE34 /* VisiStickUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VisiStickUITests.swift; sourceTree = "<group>"; };
+		3FC3E3B5224BF6030008DE34 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3FC3E38D224BF6010008DE34 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3FC3E3A1224BF6030008DE34 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3FC3E3AC224BF6030008DE34 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3FC3E387224BF6000008DE34 = {
+			isa = PBXGroup;
+			children = (
+				3FC3E392224BF6020008DE34 /* VisiStick */,
+				3FC3E3A7224BF6030008DE34 /* VisiStickTests */,
+				3FC3E3B2224BF6030008DE34 /* VisiStickUITests */,
+				3FC3E391224BF6020008DE34 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		3FC3E391224BF6020008DE34 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3FC3E390224BF6020008DE34 /* VisiStick.app */,
+				3FC3E3A4224BF6030008DE34 /* VisiStickTests.xctest */,
+				3FC3E3AF224BF6030008DE34 /* VisiStickUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3FC3E392224BF6020008DE34 /* VisiStick */ = {
+			isa = PBXGroup;
+			children = (
+				3FC3E393224BF6020008DE34 /* AppDelegate.swift */,
+				3FC3E395224BF6020008DE34 /* ViewController.swift */,
+				3FC3E397224BF6020008DE34 /* Main.storyboard */,
+				3FC3E39A224BF6020008DE34 /* Assets.xcassets */,
+				3FC3E39C224BF6020008DE34 /* LaunchScreen.storyboard */,
+				3FC3E39F224BF6020008DE34 /* Info.plist */,
+			);
+			path = VisiStick;
+			sourceTree = "<group>";
+		};
+		3FC3E3A7224BF6030008DE34 /* VisiStickTests */ = {
+			isa = PBXGroup;
+			children = (
+				3FC3E3A8224BF6030008DE34 /* VisiStickTests.swift */,
+				3FC3E3AA224BF6030008DE34 /* Info.plist */,
+			);
+			path = VisiStickTests;
+			sourceTree = "<group>";
+		};
+		3FC3E3B2224BF6030008DE34 /* VisiStickUITests */ = {
+			isa = PBXGroup;
+			children = (
+				3FC3E3B3224BF6030008DE34 /* VisiStickUITests.swift */,
+				3FC3E3B5224BF6030008DE34 /* Info.plist */,
+			);
+			path = VisiStickUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3FC3E38F224BF6010008DE34 /* VisiStick */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3FC3E3B8224BF6030008DE34 /* Build configuration list for PBXNativeTarget "VisiStick" */;
+			buildPhases = (
+				3FC3E38C224BF6010008DE34 /* Sources */,
+				3FC3E38D224BF6010008DE34 /* Frameworks */,
+				3FC3E38E224BF6010008DE34 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = VisiStick;
+			productName = VisiStick;
+			productReference = 3FC3E390224BF6020008DE34 /* VisiStick.app */;
+			productType = "com.apple.product-type.application";
+		};
+		3FC3E3A3224BF6030008DE34 /* VisiStickTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3FC3E3BB224BF6030008DE34 /* Build configuration list for PBXNativeTarget "VisiStickTests" */;
+			buildPhases = (
+				3FC3E3A0224BF6030008DE34 /* Sources */,
+				3FC3E3A1224BF6030008DE34 /* Frameworks */,
+				3FC3E3A2224BF6030008DE34 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3FC3E3A6224BF6030008DE34 /* PBXTargetDependency */,
+			);
+			name = VisiStickTests;
+			productName = VisiStickTests;
+			productReference = 3FC3E3A4224BF6030008DE34 /* VisiStickTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		3FC3E3AE224BF6030008DE34 /* VisiStickUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3FC3E3BE224BF6030008DE34 /* Build configuration list for PBXNativeTarget "VisiStickUITests" */;
+			buildPhases = (
+				3FC3E3AB224BF6030008DE34 /* Sources */,
+				3FC3E3AC224BF6030008DE34 /* Frameworks */,
+				3FC3E3AD224BF6030008DE34 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3FC3E3B1224BF6030008DE34 /* PBXTargetDependency */,
+			);
+			name = VisiStickUITests;
+			productName = VisiStickUITests;
+			productReference = 3FC3E3AF224BF6030008DE34 /* VisiStickUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3FC3E388224BF6000008DE34 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0820;
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = VisiStick;
+				TargetAttributes = {
+					3FC3E38F224BF6010008DE34 = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+					};
+					3FC3E3A3224BF6030008DE34 = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 3FC3E38F224BF6010008DE34;
+					};
+					3FC3E3AE224BF6030008DE34 = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 3FC3E38F224BF6010008DE34;
+					};
+				};
+			};
+			buildConfigurationList = 3FC3E38B224BF6000008DE34 /* Build configuration list for PBXProject "VisiStick" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3FC3E387224BF6000008DE34;
+			productRefGroup = 3FC3E391224BF6020008DE34 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3FC3E38F224BF6010008DE34 /* VisiStick */,
+				3FC3E3A3224BF6030008DE34 /* VisiStickTests */,
+				3FC3E3AE224BF6030008DE34 /* VisiStickUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3FC3E38E224BF6010008DE34 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3FC3E39E224BF6020008DE34 /* LaunchScreen.storyboard in Resources */,
+				3FC3E39B224BF6020008DE34 /* Assets.xcassets in Resources */,
+				3FC3E399224BF6020008DE34 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3FC3E3A2224BF6030008DE34 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3FC3E3AD224BF6030008DE34 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3FC3E38C224BF6010008DE34 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3FC3E396224BF6020008DE34 /* ViewController.swift in Sources */,
+				3FC3E394224BF6020008DE34 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3FC3E3A0224BF6030008DE34 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3FC3E3A9224BF6030008DE34 /* VisiStickTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3FC3E3AB224BF6030008DE34 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3FC3E3B4224BF6030008DE34 /* VisiStickUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3FC3E3A6224BF6030008DE34 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3FC3E38F224BF6010008DE34 /* VisiStick */;
+			targetProxy = 3FC3E3A5224BF6030008DE34 /* PBXContainerItemProxy */;
+		};
+		3FC3E3B1224BF6030008DE34 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3FC3E38F224BF6010008DE34 /* VisiStick */;
+			targetProxy = 3FC3E3B0224BF6030008DE34 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		3FC3E397224BF6020008DE34 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3FC3E398224BF6020008DE34 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		3FC3E39C224BF6020008DE34 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3FC3E39D224BF6020008DE34 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3FC3E3B6224BF6030008DE34 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		3FC3E3B7224BF6030008DE34 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3FC3E3B9224BF6030008DE34 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = VisiStick/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = tech.visistick.VisiStick;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		3FC3E3BA224BF6030008DE34 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = VisiStick/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = tech.visistick.VisiStick;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		3FC3E3BC224BF6030008DE34 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = VisiStickTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = tech.visistick.VisiStickTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/VisiStick.app/VisiStick";
+			};
+			name = Debug;
+		};
+		3FC3E3BD224BF6030008DE34 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = VisiStickTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = tech.visistick.VisiStickTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/VisiStick.app/VisiStick";
+			};
+			name = Release;
+		};
+		3FC3E3BF224BF6030008DE34 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = VisiStickUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = tech.visistick.VisiStickUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = VisiStick;
+			};
+			name = Debug;
+		};
+		3FC3E3C0224BF6030008DE34 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = VisiStickUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = tech.visistick.VisiStickUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = VisiStick;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3FC3E38B224BF6000008DE34 /* Build configuration list for PBXProject "VisiStick" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3FC3E3B6224BF6030008DE34 /* Debug */,
+				3FC3E3B7224BF6030008DE34 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3FC3E3B8224BF6030008DE34 /* Build configuration list for PBXNativeTarget "VisiStick" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3FC3E3B9224BF6030008DE34 /* Debug */,
+				3FC3E3BA224BF6030008DE34 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		3FC3E3BB224BF6030008DE34 /* Build configuration list for PBXNativeTarget "VisiStickTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3FC3E3BC224BF6030008DE34 /* Debug */,
+				3FC3E3BD224BF6030008DE34 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		3FC3E3BE224BF6030008DE34 /* Build configuration list for PBXNativeTarget "VisiStickUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3FC3E3BF224BF6030008DE34 /* Debug */,
+				3FC3E3C0224BF6030008DE34 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3FC3E388224BF6000008DE34 /* Project object */;
+}
