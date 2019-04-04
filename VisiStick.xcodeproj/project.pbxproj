@@ -8,12 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		3FC3E394224BF6020008DE34 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FC3E393224BF6020008DE34 /* AppDelegate.swift */; };
-		3FC3E396224BF6020008DE34 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FC3E395224BF6020008DE34 /* ViewController.swift */; };
 		3FC3E399224BF6020008DE34 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3FC3E397224BF6020008DE34 /* Main.storyboard */; };
 		3FC3E39B224BF6020008DE34 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3FC3E39A224BF6020008DE34 /* Assets.xcassets */; };
 		3FC3E39E224BF6020008DE34 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3FC3E39C224BF6020008DE34 /* LaunchScreen.storyboard */; };
 		3FC3E3A9224BF6030008DE34 /* VisiStickTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FC3E3A8224BF6030008DE34 /* VisiStickTests.swift */; };
 		3FC3E3B4224BF6030008DE34 /* VisiStickUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FC3E3B3224BF6030008DE34 /* VisiStickUITests.swift */; };
+		3FF4B0112256778E00B58DA8 /* SupportViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FF4B0102256778E00B58DA8 /* SupportViewController.swift */; };
+		3FF4B013225677A200B58DA8 /* InfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FF4B012225677A200B58DA8 /* InfoViewController.swift */; };
+		3FF4B01522567C8F00B58DA8 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FF4B01422567C8F00B58DA8 /* HomeViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +38,6 @@
 /* Begin PBXFileReference section */
 		3FC3E390224BF6020008DE34 /* VisiStick.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VisiStick.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3FC3E393224BF6020008DE34 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		3FC3E395224BF6020008DE34 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		3FC3E398224BF6020008DE34 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		3FC3E39A224BF6020008DE34 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3FC3E39D224BF6020008DE34 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,6 +48,9 @@
 		3FC3E3AF224BF6030008DE34 /* VisiStickUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VisiStickUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3FC3E3B3224BF6030008DE34 /* VisiStickUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VisiStickUITests.swift; sourceTree = "<group>"; };
 		3FC3E3B5224BF6030008DE34 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3FF4B0102256778E00B58DA8 /* SupportViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SupportViewController.swift; sourceTree = "<group>"; };
+		3FF4B012225677A200B58DA8 /* InfoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InfoViewController.swift; sourceTree = "<group>"; };
+		3FF4B01422567C8F00B58DA8 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,11 +102,13 @@
 			isa = PBXGroup;
 			children = (
 				3FC3E393224BF6020008DE34 /* AppDelegate.swift */,
-				3FC3E395224BF6020008DE34 /* ViewController.swift */,
+				3FF4B0102256778E00B58DA8 /* SupportViewController.swift */,
+				3FF4B01422567C8F00B58DA8 /* HomeViewController.swift */,
 				3FC3E397224BF6020008DE34 /* Main.storyboard */,
 				3FC3E39A224BF6020008DE34 /* Assets.xcassets */,
 				3FC3E39C224BF6020008DE34 /* LaunchScreen.storyboard */,
 				3FC3E39F224BF6020008DE34 /* Info.plist */,
+				3FF4B012225677A200B58DA8 /* InfoViewController.swift */,
 			);
 			path = VisiStick;
 			sourceTree = "<group>";
@@ -259,8 +265,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3FC3E396224BF6020008DE34 /* ViewController.swift in Sources */,
 				3FC3E394224BF6020008DE34 /* AppDelegate.swift in Sources */,
+				3FF4B013225677A200B58DA8 /* InfoViewController.swift in Sources */,
+				3FF4B0112256778E00B58DA8 /* SupportViewController.swift in Sources */,
+				3FF4B01522567C8F00B58DA8 /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -505,6 +513,7 @@
 				3FC3E3BA224BF6030008DE34 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3FC3E3BB224BF6030008DE34 /* Build configuration list for PBXNativeTarget "VisiStickTests" */ = {
 			isa = XCConfigurationList;
@@ -513,6 +522,7 @@
 				3FC3E3BD224BF6030008DE34 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3FC3E3BE224BF6030008DE34 /* Build configuration list for PBXNativeTarget "VisiStickUITests" */ = {
 			isa = XCConfigurationList;
@@ -521,6 +531,7 @@
 				3FC3E3C0224BF6030008DE34 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
