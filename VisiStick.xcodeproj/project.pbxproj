@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3F2A6B0F225BC51200503A62 /* beep.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 3F2A6B0E225BC51200503A62 /* beep.mp3 */; };
+		3F2A6B11225BC70300503A62 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F2A6B10225BC70300503A62 /* AVFoundation.framework */; };
 		3F519EC3225683E600C0CFDD /* CoreBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F519EC2225683E600C0CFDD /* CoreBluetooth.framework */; };
 		3FC3E394224BF6020008DE34 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FC3E393224BF6020008DE34 /* AppDelegate.swift */; };
 		3FC3E399224BF6020008DE34 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3FC3E397224BF6020008DE34 /* Main.storyboard */; };
@@ -37,6 +39,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3F2A6B0E225BC51200503A62 /* beep.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = beep.mp3; sourceTree = "<group>"; };
+		3F2A6B10225BC70300503A62 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		3F519EC2225683E600C0CFDD /* CoreBluetooth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreBluetooth.framework; path = System/Library/Frameworks/CoreBluetooth.framework; sourceTree = SDKROOT; };
 		3FC3E390224BF6020008DE34 /* VisiStick.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VisiStick.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3FC3E393224BF6020008DE34 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -60,6 +64,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3F2A6B11225BC70300503A62 /* AVFoundation.framework in Frameworks */,
 				3F519EC3225683E600C0CFDD /* CoreBluetooth.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -84,6 +89,7 @@
 		3F519EC1225683E500C0CFDD /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				3F2A6B10225BC70300503A62 /* AVFoundation.framework */,
 				3F519EC2225683E600C0CFDD /* CoreBluetooth.framework */,
 			);
 			name = Frameworks;
@@ -113,6 +119,7 @@
 		3FC3E392224BF6020008DE34 /* VisiStick */ = {
 			isa = PBXGroup;
 			children = (
+				3F2A6B0E225BC51200503A62 /* beep.mp3 */,
 				3FC3E393224BF6020008DE34 /* AppDelegate.swift */,
 				3FF4B0102256778E00B58DA8 /* SupportViewController.swift */,
 				3FF4B01422567C8F00B58DA8 /* HomeViewController.swift */,
@@ -250,6 +257,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3F2A6B0F225BC51200503A62 /* beep.mp3 in Resources */,
 				3FC3E39E224BF6020008DE34 /* LaunchScreen.storyboard in Resources */,
 				3FC3E39B224BF6020008DE34 /* Assets.xcassets in Resources */,
 				3FC3E399224BF6020008DE34 /* Main.storyboard in Resources */,
