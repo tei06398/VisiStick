@@ -16,9 +16,12 @@
 		3FC3E39E224BF6020008DE34 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3FC3E39C224BF6020008DE34 /* LaunchScreen.storyboard */; };
 		3FC3E3A9224BF6030008DE34 /* VisiStickTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FC3E3A8224BF6030008DE34 /* VisiStickTests.swift */; };
 		3FC3E3B4224BF6030008DE34 /* VisiStickUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FC3E3B3224BF6030008DE34 /* VisiStickUITests.swift */; };
+		3FD31030226107110012EE29 /* BLECentralViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FD3102F226107110012EE29 /* BLECentralViewController.swift */; };
+		3FD310322261080B0012EE29 /* PeripheralTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FD310312261080B0012EE29 /* PeripheralTableViewCell.swift */; };
+		3FD310342261080F0012EE29 /* UUIDKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FD310332261080F0012EE29 /* UUIDKey.swift */; };
+		3FD31036226108140012EE29 /* UartModuleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FD31035226108140012EE29 /* UartModuleViewController.swift */; };
 		3FF4B0112256778E00B58DA8 /* SupportViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FF4B0102256778E00B58DA8 /* SupportViewController.swift */; };
 		3FF4B013225677A200B58DA8 /* InfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FF4B012225677A200B58DA8 /* InfoViewController.swift */; };
-		3FF4B01522567C8F00B58DA8 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FF4B01422567C8F00B58DA8 /* HomeViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,9 +57,12 @@
 		3FC3E3AF224BF6030008DE34 /* VisiStickUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VisiStickUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3FC3E3B3224BF6030008DE34 /* VisiStickUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VisiStickUITests.swift; sourceTree = "<group>"; };
 		3FC3E3B5224BF6030008DE34 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3FD3102F226107110012EE29 /* BLECentralViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BLECentralViewController.swift; sourceTree = "<group>"; };
+		3FD310312261080B0012EE29 /* PeripheralTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PeripheralTableViewCell.swift; sourceTree = "<group>"; };
+		3FD310332261080F0012EE29 /* UUIDKey.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UUIDKey.swift; sourceTree = "<group>"; };
+		3FD31035226108140012EE29 /* UartModuleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UartModuleViewController.swift; sourceTree = "<group>"; };
 		3FF4B0102256778E00B58DA8 /* SupportViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SupportViewController.swift; sourceTree = "<group>"; };
 		3FF4B012225677A200B58DA8 /* InfoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InfoViewController.swift; sourceTree = "<group>"; };
-		3FF4B01422567C8F00B58DA8 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -119,10 +125,13 @@
 		3FC3E392224BF6020008DE34 /* VisiStick */ = {
 			isa = PBXGroup;
 			children = (
+				3FD3102F226107110012EE29 /* BLECentralViewController.swift */,
 				3F2A6B0E225BC51200503A62 /* beep.mp3 */,
 				3FC3E393224BF6020008DE34 /* AppDelegate.swift */,
+				3FD310332261080F0012EE29 /* UUIDKey.swift */,
 				3FF4B0102256778E00B58DA8 /* SupportViewController.swift */,
-				3FF4B01422567C8F00B58DA8 /* HomeViewController.swift */,
+				3FD310312261080B0012EE29 /* PeripheralTableViewCell.swift */,
+				3FD31035226108140012EE29 /* UartModuleViewController.swift */,
 				3FC3E397224BF6020008DE34 /* Main.storyboard */,
 				3FC3E39A224BF6020008DE34 /* Assets.xcassets */,
 				3FC3E39C224BF6020008DE34 /* LaunchScreen.storyboard */,
@@ -285,10 +294,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3FD310342261080F0012EE29 /* UUIDKey.swift in Sources */,
 				3FC3E394224BF6020008DE34 /* AppDelegate.swift in Sources */,
+				3FD31036226108140012EE29 /* UartModuleViewController.swift in Sources */,
+				3FD31030226107110012EE29 /* BLECentralViewController.swift in Sources */,
 				3FF4B013225677A200B58DA8 /* InfoViewController.swift in Sources */,
 				3FF4B0112256778E00B58DA8 /* SupportViewController.swift in Sources */,
-				3FF4B01522567C8F00B58DA8 /* HomeViewController.swift in Sources */,
+				3FD310322261080B0012EE29 /* PeripheralTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -383,7 +395,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -427,7 +439,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
