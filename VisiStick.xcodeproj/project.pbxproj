@@ -22,6 +22,7 @@
 		3FD31036226108140012EE29 /* UartModuleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FD31035226108140012EE29 /* UartModuleViewController.swift */; };
 		3FF4B0112256778E00B58DA8 /* SupportViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FF4B0102256778E00B58DA8 /* SupportViewController.swift */; };
 		3FF4B013225677A200B58DA8 /* InfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FF4B012225677A200B58DA8 /* InfoViewController.swift */; };
+		5D69DC6D2266534400E6A93D /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 5D69DC6C2266534400E6A93D /* Settings.bundle */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +64,7 @@
 		3FD31035226108140012EE29 /* UartModuleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UartModuleViewController.swift; sourceTree = "<group>"; };
 		3FF4B0102256778E00B58DA8 /* SupportViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SupportViewController.swift; sourceTree = "<group>"; };
 		3FF4B012225677A200B58DA8 /* InfoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InfoViewController.swift; sourceTree = "<group>"; };
+		5D69DC6C2266534400E6A93D /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -125,6 +127,7 @@
 		3FC3E392224BF6020008DE34 /* VisiStick */ = {
 			isa = PBXGroup;
 			children = (
+				5D69DC6C2266534400E6A93D /* Settings.bundle */,
 				3FD3102F226107110012EE29 /* BLECentralViewController.swift */,
 				3F2A6B0E225BC51200503A62 /* beep.mp3 */,
 				3FC3E393224BF6020008DE34 /* AppDelegate.swift */,
@@ -269,6 +272,7 @@
 			files = (
 				3F2A6B0F225BC51200503A62 /* beep.mp3 in Resources */,
 				3FC3E39E224BF6020008DE34 /* LaunchScreen.storyboard in Resources */,
+				5D69DC6D2266534400E6A93D /* Settings.bundle in Resources */,
 				3FC3E39B224BF6020008DE34 /* Assets.xcassets in Resources */,
 				3FC3E399224BF6020008DE34 /* Main.storyboard in Resources */,
 			);

@@ -33,6 +33,13 @@
                                             <action selector="play:" destination="rqR-l6-gDb" eventType="touchUpInside" id="Kfq-HM-HL3"/>
                                         </connections>
                                     </button>
+                                    <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="0" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="jpE-EB-lF6">
+                                        <rect key="frame" x="116" y="128" width="97" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </view>
@@ -51,6 +58,9 @@
                             </button>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="pitchAdj" destination="jpE-EB-lF6" id="80W-Si-Nez"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LEF-J9-rIU" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -135,7 +145,7 @@
                     <navigationItem key="navigationItem" title="VisiStick" id="fhb-op-aMS">
                         <barButtonItem key="leftBarButtonItem" title="About" style="done" id="gpg-IV-Pq0">
                             <connections>
-                                <segue destination="rqR-l6-gDb" kind="show" id="bvy-gv-kqY"/>
+                                <segue destination="rqR-l6-gDb" kind="show" id="adq-TZ-gcB"/>
                             </connections>
                         </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" systemItem="refresh" id="8CK-qI-dmT">
@@ -195,7 +205,7 @@
                                                     <outlet property="delegate" destination="yBS-Vb-CWr" id="69w-Wo-9rX"/>
                                                 </connections>
                                             </textField>
-                                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="QyE-ox-hdG">
+                                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="QyE-ox-hdG">
                                                 <rect key="frame" x="95" y="453" width="51" height="31"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="31" id="WLS-22-uzK"/>
@@ -205,7 +215,7 @@
                                                     <action selector="switchAction:" destination="yBS-Vb-CWr" eventType="valueChanged" id="v5T-rC-V5o"/>
                                                 </connections>
                                             </switch>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="On / Off" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xN0-eW-ga0">
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="DEBUG" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xN0-eW-ga0">
                                                 <rect key="frame" x="24" y="453" width="61" height="31"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="31" id="FxX-cZ-fKH"/>

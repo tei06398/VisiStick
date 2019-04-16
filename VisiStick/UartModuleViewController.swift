@@ -27,6 +27,7 @@ class UartModuleViewController: UIViewController, CBPeripheralManagerDelegate, U
     var peripheralManager: CBPeripheralManager?
     var peripheral: CBPeripheral!
     private var consoleAsciiText:NSAttributedString? = NSAttributedString(string: "")
+    var debugEnabled: Bool = false
     
     
     override func viewDidLoad() {
@@ -64,21 +65,47 @@ class UartModuleViewController: UIViewController, CBPeripheralManagerDelegate, U
         
     }
     
+    var recievedPings: [NSInteger] = []
+    
     func updateIncomingData () {
         NotificationCenter.default.addObserver(forName: NSNotification.Name(rawValue: "Notify"), object: nil , queue: nil){
             notification in
-            let appendString = "\n"
-            let myFont = UIFont(name: "Helvetica Neue", size: 15.0)
-            let myAttributes2 = [NSFontAttributeName: myFont!, NSForegroundColorAttributeName: UIColor.red]
-            let attribString = NSAttributedString(string: "[Incoming]: " + (characteristicASCIIValue as String) + appendString, attributes: myAttributes2)
-            let newAsciiText = NSMutableAttributedString(attributedString: self.consoleAsciiText!)
-            self.baseTextView.attributedText = NSAttributedString(string: characteristicASCIIValue as String , attributes: myAttributes2)
             
-            newAsciiText.append(attribString)
-            
-            self.consoleAsciiText = newAsciiText
-            self.baseTextView.attributedText = self.consoleAsciiText
-            
+            if (self.recievedPings.count < 3) {
+                self.recievedPings.append(Int(characteristicASCIIValue.intValue))
+            } else {
+                var total: NSInteger = 0
+                for i in self.recievedPings {
+                    total+=i
+                }
+                self.recievedPings = []
+                let appendString = "\n"
+                let myFont = UIFont(name: "Helvetica Neue", size: 15.0)
+                let myAttributes2 = [NSFontAttributeName: myFont!, NSForegroundColorAttributeName: UIColor.red]
+                let attribString = NSAttributedString(string: "[AVG]: " + (String(total/3)) + appendString, attributes: myAttributes2)
+                let newAsciiText = NSMutableAttributedString(attributedString: self.consoleAsciiText!)
+                self.baseTextView.attributedText = NSAttributedString(string: characteristicASCIIValue as String , attributes: myAttributes2)
+                
+                newAsciiText.append(attribString)
+                print("AVG: " + String(total/3))
+                
+                self.consoleAsciiText = newAsciiText
+                self.baseTextView.attributedText = self.consoleAsciiText
+            }
+            if self.debugEnabled {
+                let appendString = "\n"
+                let myFont = UIFont(name: "Helvetica Neue", size: 15.0)
+                let myAttributes2 = [NSFontAttributeName: myFont!, NSForegroundColorAttributeName: UIColor.red]
+                let attribString = NSAttributedString(string: "[Incoming]: " + (characteristicASCIIValue as String) + appendString, attributes: myAttributes2)
+                let newAsciiText = NSMutableAttributedString(attributedString: self.consoleAsciiText!)
+                self.baseTextView.attributedText = NSAttributedString(string: characteristicASCIIValue as String , attributes: myAttributes2)
+                
+                newAsciiText.append(attribString)
+                
+                self.consoleAsciiText = newAsciiText
+                self.baseTextView.attributedText = self.consoleAsciiText
+            }
+            print("IN:" + (characteristicASCIIValue as String))
         }
     }
     
@@ -163,14 +190,11 @@ class UartModuleViewController: UIViewController, CBPeripheralManagerDelegate, U
     //This can be used as a switch or any thing you'd like
     @IBAction func switchAction(_ sender: Any) {
         if switchUI.isOn {
-            print("On ")
-            writeCharacteristic(val: 1)
+            debugEnabled = true
         }
         else
         {
-            print("Off")
-            writeCharacteristic(val: 0)
-            print(writeCharacteristic)
+            debugEnabled = false
         }
     }
     
