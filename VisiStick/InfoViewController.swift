@@ -2,17 +2,20 @@
 //  InfoViewController.swift
 //  VisiStick
 //
-//  Created by PLTW Student on 4/4/19.
+//  Created by Seth Teichman for the VisiStick Project on 4/4/19.
 //  Copyright © 2019 VisiStick. All rights reserved.
 //
 
 import UIKit
+import AVFoundation
 
 class InfoViewController: UIViewController {
-
+    var audioPlayer = AVAudioPlayer()
+    var beep = Bundle.main.path(forResource: "beep", ofType: "mp3")
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         // Do any additional setup after loading the view.
     }
 
@@ -20,8 +23,20 @@ class InfoViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
     @IBAction func segueToBLE(unwindSegue: UIStoryboardSegue) {
         
+    }
+    
+    @IBAction func play(_ sender: Any) {
+        do {
+            let url = URL(fileURLWithPath: beep!)
+            audioPlayer = try AVAudioPlayer(contentsOf: url )
+            audioPlayer.play()
+        }
+        catch{
+            print(error)
+        }
     }
 
     /*

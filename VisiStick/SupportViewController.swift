@@ -2,7 +2,7 @@
 //  SupportViewController.swift
 //  VisiStick
 //
-//  Created by PLTW Student on 4/4/19.
+//  Created by Seth Teichman for the VisiStick Project on 4/4/19.
 //  Copyright © 2019 VisiStick. All rights reserved.
 //
 

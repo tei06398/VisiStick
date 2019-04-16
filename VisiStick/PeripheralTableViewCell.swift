@@ -5,6 +5,8 @@
 //  Created by Trevor Beaton on 11/30/16.
 //  Copyright © 2016 Vanguard Logic LLC. All rights reserved.
 //
+//  Adopted and Modified by Seth Teichman for the VisiStick Project on 4/12/19.
+//  Copyright © 2019 VisiStick. All rights reserved.
 
 import UIKit
 

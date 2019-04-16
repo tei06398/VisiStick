@@ -2,7 +2,7 @@
 //  AppDelegate.swift
 //  VisiStick
 //
-//  Created by PLTW Student on 3/27/19.
+//  Created by Seth Teichman for the VisiStick Project on 3/27/19.
 //  Copyright © 2019 VisiStick. All rights reserved.
 //
 
