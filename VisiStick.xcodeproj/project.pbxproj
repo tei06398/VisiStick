@@ -23,6 +23,22 @@
 		3FF4B0112256778E00B58DA8 /* SupportViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FF4B0102256778E00B58DA8 /* SupportViewController.swift */; };
 		3FF4B013225677A200B58DA8 /* InfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FF4B012225677A200B58DA8 /* InfoViewController.swift */; };
 		5D69DC6D2266534400E6A93D /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 5D69DC6C2266534400E6A93D /* Settings.bundle */; };
+		5D92C7892278FF1600E15D8F /* 1550hz.wav in Resources */ = {isa = PBXBuildFile; fileRef = 5D92C7792278FF1300E15D8F /* 1550hz.wav */; };
+		5D92C78A2278FF1600E15D8F /* 900hz.wav in Resources */ = {isa = PBXBuildFile; fileRef = 5D92C77A2278FF1300E15D8F /* 900hz.wav */; };
+		5D92C78B2278FF1600E15D8F /* 1100hz.wav in Resources */ = {isa = PBXBuildFile; fileRef = 5D92C77B2278FF1400E15D8F /* 1100hz.wav */; };
+		5D92C78C2278FF1600E15D8F /* 1150hz.wav in Resources */ = {isa = PBXBuildFile; fileRef = 5D92C77C2278FF1400E15D8F /* 1150hz.wav */; };
+		5D92C78D2278FF1600E15D8F /* 1300hz.wav in Resources */ = {isa = PBXBuildFile; fileRef = 5D92C77D2278FF1400E15D8F /* 1300hz.wav */; };
+		5D92C78E2278FF1600E15D8F /* 1250hz.wav in Resources */ = {isa = PBXBuildFile; fileRef = 5D92C77E2278FF1400E15D8F /* 1250hz.wav */; };
+		5D92C78F2278FF1600E15D8F /* 1200hz.wav in Resources */ = {isa = PBXBuildFile; fileRef = 5D92C77F2278FF1400E15D8F /* 1200hz.wav */; };
+		5D92C7902278FF1600E15D8F /* 1000hz.wav in Resources */ = {isa = PBXBuildFile; fileRef = 5D92C7802278FF1400E15D8F /* 1000hz.wav */; };
+		5D92C7912278FF1600E15D8F /* 950hz.wav in Resources */ = {isa = PBXBuildFile; fileRef = 5D92C7812278FF1500E15D8F /* 950hz.wav */; };
+		5D92C7922278FF1600E15D8F /* 1600hz.wav in Resources */ = {isa = PBXBuildFile; fileRef = 5D92C7822278FF1500E15D8F /* 1600hz.wav */; };
+		5D92C7932278FF1600E15D8F /* 1650hz.wav in Resources */ = {isa = PBXBuildFile; fileRef = 5D92C7832278FF1500E15D8F /* 1650hz.wav */; };
+		5D92C7942278FF1600E15D8F /* 1050hz.wav in Resources */ = {isa = PBXBuildFile; fileRef = 5D92C7842278FF1500E15D8F /* 1050hz.wav */; };
+		5D92C7952278FF1600E15D8F /* 1400hz.wav in Resources */ = {isa = PBXBuildFile; fileRef = 5D92C7852278FF1500E15D8F /* 1400hz.wav */; };
+		5D92C7962278FF1600E15D8F /* 1450hz.wav in Resources */ = {isa = PBXBuildFile; fileRef = 5D92C7862278FF1500E15D8F /* 1450hz.wav */; };
+		5D92C7972278FF1600E15D8F /* 1500hz.wav in Resources */ = {isa = PBXBuildFile; fileRef = 5D92C7872278FF1600E15D8F /* 1500hz.wav */; };
+		5D92C79A2278FF2E00E15D8F /* 1350hz.wav in Resources */ = {isa = PBXBuildFile; fileRef = 5D92C7992278FF2E00E15D8F /* 1350hz.wav */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,6 +81,22 @@
 		3FF4B0102256778E00B58DA8 /* SupportViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SupportViewController.swift; sourceTree = "<group>"; };
 		3FF4B012225677A200B58DA8 /* InfoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InfoViewController.swift; sourceTree = "<group>"; };
 		5D69DC6C2266534400E6A93D /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
+		5D92C7792278FF1300E15D8F /* 1550hz.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = 1550hz.wav; sourceTree = "<group>"; };
+		5D92C77A2278FF1300E15D8F /* 900hz.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = 900hz.wav; sourceTree = "<group>"; };
+		5D92C77B2278FF1400E15D8F /* 1100hz.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = 1100hz.wav; sourceTree = "<group>"; };
+		5D92C77C2278FF1400E15D8F /* 1150hz.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = 1150hz.wav; sourceTree = "<group>"; };
+		5D92C77D2278FF1400E15D8F /* 1300hz.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = 1300hz.wav; sourceTree = "<group>"; };
+		5D92C77E2278FF1400E15D8F /* 1250hz.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = 1250hz.wav; sourceTree = "<group>"; };
+		5D92C77F2278FF1400E15D8F /* 1200hz.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = 1200hz.wav; sourceTree = "<group>"; };
+		5D92C7802278FF1400E15D8F /* 1000hz.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = 1000hz.wav; sourceTree = "<group>"; };
+		5D92C7812278FF1500E15D8F /* 950hz.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = 950hz.wav; sourceTree = "<group>"; };
+		5D92C7822278FF1500E15D8F /* 1600hz.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = 1600hz.wav; sourceTree = "<group>"; };
+		5D92C7832278FF1500E15D8F /* 1650hz.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = 1650hz.wav; sourceTree = "<group>"; };
+		5D92C7842278FF1500E15D8F /* 1050hz.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = 1050hz.wav; sourceTree = "<group>"; };
+		5D92C7852278FF1500E15D8F /* 1400hz.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = 1400hz.wav; sourceTree = "<group>"; };
+		5D92C7862278FF1500E15D8F /* 1450hz.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = 1450hz.wav; sourceTree = "<group>"; };
+		5D92C7872278FF1600E15D8F /* 1500hz.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = 1500hz.wav; sourceTree = "<group>"; };
+		5D92C7992278FF2E00E15D8F /* 1350hz.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = 1350hz.wav; path = ../../../Desktop/1350hz.wav; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -129,6 +161,22 @@
 			children = (
 				5D69DC6C2266534400E6A93D /* Settings.bundle */,
 				3FD3102F226107110012EE29 /* BLECentralViewController.swift */,
+				5D92C77A2278FF1300E15D8F /* 900hz.wav */,
+				5D92C7812278FF1500E15D8F /* 950hz.wav */,
+				5D92C7802278FF1400E15D8F /* 1000hz.wav */,
+				5D92C7842278FF1500E15D8F /* 1050hz.wav */,
+				5D92C77B2278FF1400E15D8F /* 1100hz.wav */,
+				5D92C77C2278FF1400E15D8F /* 1150hz.wav */,
+				5D92C77F2278FF1400E15D8F /* 1200hz.wav */,
+				5D92C77E2278FF1400E15D8F /* 1250hz.wav */,
+				5D92C77D2278FF1400E15D8F /* 1300hz.wav */,
+				5D92C7992278FF2E00E15D8F /* 1350hz.wav */,
+				5D92C7852278FF1500E15D8F /* 1400hz.wav */,
+				5D92C7862278FF1500E15D8F /* 1450hz.wav */,
+				5D92C7872278FF1600E15D8F /* 1500hz.wav */,
+				5D92C7792278FF1300E15D8F /* 1550hz.wav */,
+				5D92C7822278FF1500E15D8F /* 1600hz.wav */,
+				5D92C7832278FF1500E15D8F /* 1650hz.wav */,
 				3F2A6B0E225BC51200503A62 /* beep.mp3 */,
 				3FC3E393224BF6020008DE34 /* AppDelegate.swift */,
 				3FD310332261080F0012EE29 /* UUIDKey.swift */,
@@ -270,11 +318,27 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5D92C7902278FF1600E15D8F /* 1000hz.wav in Resources */,
+				5D92C7952278FF1600E15D8F /* 1400hz.wav in Resources */,
+				5D92C7912278FF1600E15D8F /* 950hz.wav in Resources */,
+				5D92C78E2278FF1600E15D8F /* 1250hz.wav in Resources */,
 				3F2A6B0F225BC51200503A62 /* beep.mp3 in Resources */,
+				5D92C7932278FF1600E15D8F /* 1650hz.wav in Resources */,
+				5D92C7972278FF1600E15D8F /* 1500hz.wav in Resources */,
+				5D92C7922278FF1600E15D8F /* 1600hz.wav in Resources */,
 				3FC3E39E224BF6020008DE34 /* LaunchScreen.storyboard in Resources */,
+				5D92C78C2278FF1600E15D8F /* 1150hz.wav in Resources */,
+				5D92C78B2278FF1600E15D8F /* 1100hz.wav in Resources */,
+				5D92C79A2278FF2E00E15D8F /* 1350hz.wav in Resources */,
+				5D92C78A2278FF1600E15D8F /* 900hz.wav in Resources */,
 				5D69DC6D2266534400E6A93D /* Settings.bundle in Resources */,
+				5D92C78F2278FF1600E15D8F /* 1200hz.wav in Resources */,
 				3FC3E39B224BF6020008DE34 /* Assets.xcassets in Resources */,
 				3FC3E399224BF6020008DE34 /* Main.storyboard in Resources */,
+				5D92C78D2278FF1600E15D8F /* 1300hz.wav in Resources */,
+				5D92C7892278FF1600E15D8F /* 1550hz.wav in Resources */,
+				5D92C7962278FF1600E15D8F /* 1450hz.wav in Resources */,
+				5D92C7942278FF1600E15D8F /* 1050hz.wav in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
