@@ -55,6 +55,7 @@ class BLECentralViewController : UIViewController, CBCentralManagerDelegate, CBP
         centralManager = CBCentralManager(delegate: self, queue: nil)
         let backButton = UIBarButtonItem(title: "Back", style: .plain, target: nil, action: nil)
         navigationItem.backBarButtonItem = backButton
+        
     }
     
     override func viewDidAppear(_ animated: Bool) {
@@ -77,7 +78,7 @@ class BLECentralViewController : UIViewController, CBCentralManagerDelegate, CBP
         print("Now Scanning...")
         self.timer.invalidate()
         centralManager?.scanForPeripherals(withServices: [BLEService_UUID] , options: [CBCentralManagerScanOptionAllowDuplicatesKey:false])
-        Timer.scheduledTimer(timeInterval: 17, target: self, selector: #selector(self.cancelScan), userInfo: nil, repeats: false)
+        Timer.scheduledTimer(timeInterval: 5, target: self, selector: #selector(self.cancelScan), userInfo: nil, repeats: false)
     }
     
     /*We also need to stop scanning at some point so we'll also create a function that calls "stopScan"*/
@@ -85,6 +86,15 @@ class BLECentralViewController : UIViewController, CBCentralManagerDelegate, CBP
         self.centralManager?.stopScan()
         print("Scan Stopped")
         print("Number of Peripherals Found: \(peripherals.count)")
+        print("Peripheral Names:")
+        for p in peripherals {
+            print(p.name)
+            if p.name == "VisiStick" {
+                print("t")
+                blePeripheral = p
+                connectToDevice()
+            }
+        }
     }
     
     func refreshScanView() {
@@ -162,7 +172,8 @@ class BLECentralViewController : UIViewController, CBCentralManagerDelegate, CBP
         //Once connected, move to new view controller to manager incoming and outgoing data
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
         
-        let uartViewController = storyboard.instantiateViewController(withIdentifier: "UartModuleViewController") as! UartModuleViewController
+        //let uartViewController = storyboard.instantiateViewController(withIdentifier: "UartModuleViewController") as! UartModuleViewController
+        let uartViewController = storyboard.instantiateViewController(withIdentifier: "UartModuleCleanViewController") as! UartModuleCleanViewController
         
         uartViewController.peripheral = peripheral
         

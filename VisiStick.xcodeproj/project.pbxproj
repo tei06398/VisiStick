@@ -22,7 +22,7 @@
 		3FD31036226108140012EE29 /* UartModuleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FD31035226108140012EE29 /* UartModuleViewController.swift */; };
 		3FF4B0112256778E00B58DA8 /* SupportViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FF4B0102256778E00B58DA8 /* SupportViewController.swift */; };
 		3FF4B013225677A200B58DA8 /* InfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FF4B012225677A200B58DA8 /* InfoViewController.swift */; };
-		5D69DC6D2266534400E6A93D /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 5D69DC6C2266534400E6A93D /* Settings.bundle */; };
+		5D8CFAA322823435002C0809 /* UartModuleCleanViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D8CFAA222823435002C0809 /* UartModuleCleanViewController.swift */; };
 		5D92C7892278FF1600E15D8F /* 1550hz.wav in Resources */ = {isa = PBXBuildFile; fileRef = 5D92C7792278FF1300E15D8F /* 1550hz.wav */; };
 		5D92C78A2278FF1600E15D8F /* 900hz.wav in Resources */ = {isa = PBXBuildFile; fileRef = 5D92C77A2278FF1300E15D8F /* 900hz.wav */; };
 		5D92C78B2278FF1600E15D8F /* 1100hz.wav in Resources */ = {isa = PBXBuildFile; fileRef = 5D92C77B2278FF1400E15D8F /* 1100hz.wav */; };
@@ -80,7 +80,7 @@
 		3FD31035226108140012EE29 /* UartModuleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UartModuleViewController.swift; sourceTree = "<group>"; };
 		3FF4B0102256778E00B58DA8 /* SupportViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SupportViewController.swift; sourceTree = "<group>"; };
 		3FF4B012225677A200B58DA8 /* InfoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InfoViewController.swift; sourceTree = "<group>"; };
-		5D69DC6C2266534400E6A93D /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
+		5D8CFAA222823435002C0809 /* UartModuleCleanViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UartModuleCleanViewController.swift; sourceTree = "<group>"; };
 		5D92C7792278FF1300E15D8F /* 1550hz.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = 1550hz.wav; sourceTree = "<group>"; };
 		5D92C77A2278FF1300E15D8F /* 900hz.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = 900hz.wav; sourceTree = "<group>"; };
 		5D92C77B2278FF1400E15D8F /* 1100hz.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = 1100hz.wav; sourceTree = "<group>"; };
@@ -159,7 +159,6 @@
 		3FC3E392224BF6020008DE34 /* VisiStick */ = {
 			isa = PBXGroup;
 			children = (
-				5D69DC6C2266534400E6A93D /* Settings.bundle */,
 				3FD3102F226107110012EE29 /* BLECentralViewController.swift */,
 				5D92C77A2278FF1300E15D8F /* 900hz.wav */,
 				5D92C7812278FF1500E15D8F /* 950hz.wav */,
@@ -188,6 +187,7 @@
 				3FC3E39C224BF6020008DE34 /* LaunchScreen.storyboard */,
 				3FC3E39F224BF6020008DE34 /* Info.plist */,
 				3FF4B012225677A200B58DA8 /* InfoViewController.swift */,
+				5D8CFAA222823435002C0809 /* UartModuleCleanViewController.swift */,
 			);
 			path = VisiStick;
 			sourceTree = "<group>";
@@ -273,7 +273,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0820;
-				LastUpgradeCheck = 0820;
+				LastUpgradeCheck = 0920;
 				ORGANIZATIONNAME = VisiStick;
 				TargetAttributes = {
 					3FC3E38F224BF6010008DE34 = {
@@ -331,7 +331,6 @@
 				5D92C78B2278FF1600E15D8F /* 1100hz.wav in Resources */,
 				5D92C79A2278FF2E00E15D8F /* 1350hz.wav in Resources */,
 				5D92C78A2278FF1600E15D8F /* 900hz.wav in Resources */,
-				5D69DC6D2266534400E6A93D /* Settings.bundle in Resources */,
 				5D92C78F2278FF1600E15D8F /* 1200hz.wav in Resources */,
 				3FC3E39B224BF6020008DE34 /* Assets.xcassets in Resources */,
 				3FC3E399224BF6020008DE34 /* Main.storyboard in Resources */,
@@ -369,6 +368,7 @@
 				3FD31030226107110012EE29 /* BLECentralViewController.swift in Sources */,
 				3FF4B013225677A200B58DA8 /* InfoViewController.swift in Sources */,
 				3FF4B0112256778E00B58DA8 /* SupportViewController.swift in Sources */,
+				5D8CFAA322823435002C0809 /* UartModuleCleanViewController.swift in Sources */,
 				3FD310322261080B0012EE29 /* PeripheralTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -433,7 +433,9 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
@@ -441,11 +443,16 @@
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Developer: visistick@gmail.com (Q7Q3BRKZ92)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: visistick@gmail.com (Q7Q3BRKZ92)";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -483,7 +490,9 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
@@ -491,11 +500,16 @@
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Developer: visistick@gmail.com (Q7Q3BRKZ92)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: visistick@gmail.com (Q7Q3BRKZ92)";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
