@@ -368,7 +368,7 @@ class BLECentralViewController : UIViewController, CBCentralManagerDelegate, CBP
         } else {
             cell.peripheralLabel.text = peripheral.name
         }
-        cell.rssiLabel.text = "RSSI: \(RSSI)"
+        cell.rssiLabel.text = "Double Tap to Connect"
         
         return cell
     }

@@ -31,7 +31,7 @@
         <!--Info-->
         <scene sceneID="s1X-vS-PGd">
             <objects>
-                <viewController id="rqR-l6-gDb" userLabel="Info" customClass="InfoViewController" customModule="VisiStick" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="rqR-l6-gDb" userLabel="Info" customClass="DebugViewController" customModule="VisiStick" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="ofI-yR-XWI"/>
                         <viewControllerLayoutGuide type="bottom" id="FA1-V8-0LH"/>
@@ -86,15 +86,13 @@
                             <constraint firstAttribute="trailingMargin" secondItem="ULp-Ur-Pl0" secondAttribute="trailing" constant="-71" id="djU-0e-H9N"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="About VisiStick" id="2Rv-Fx-AwU">
+                    <navigationItem key="navigationItem" title="Debug" id="2Rv-Fx-AwU">
+                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="jIJ-ar-0oL"/>
                         <barButtonItem key="rightBarButtonItem" style="plain" id="QA8-Fa-P4o">
                             <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="WSq-nH-FjD">
                                 <rect key="frame" x="254" y="7" width="50" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Credits"/>
-                                <connections>
-                                    <segue destination="Ux1-4k-1DV" kind="show" id="6p9-1F-bfx"/>
-                                </connections>
                             </button>
                         </barButtonItem>
                     </navigationItem>
@@ -105,7 +103,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LEF-J9-rIU" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="229.59999999999999" y="751.57421289355329"/>
+            <point key="canvasLocation" x="1101" y="750"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="cw2-3u-JUH">
@@ -184,9 +182,9 @@
                     </view>
                     <toolbarItems/>
                     <navigationItem key="navigationItem" title="VisiStick" id="fhb-op-aMS">
-                        <barButtonItem key="leftBarButtonItem" title="About" style="done" id="gpg-IV-Pq0">
+                        <barButtonItem key="leftBarButtonItem" title="Support" style="done" id="gpg-IV-Pq0">
                             <connections>
-                                <segue destination="rqR-l6-gDb" kind="show" id="adq-TZ-gcB"/>
+                                <segue destination="Ux1-4k-1DV" kind="show" id="C5C-KH-kX0"/>
                             </connections>
                         </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" systemItem="refresh" id="8CK-qI-dmT">
@@ -331,7 +329,7 @@
         <!--Credits-->
         <scene sceneID="Sxq-A2-i2C">
             <objects>
-                <viewController id="Ux1-4k-1DV" userLabel="Credits" customClass="InfoViewController" customModule="VisiStick" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="Ux1-4k-1DV" userLabel="Credits" customClass="SupportViewController" customModule="VisiStick" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="4t9-C6-rgt"/>
                         <viewControllerLayoutGuide type="bottom" id="U4h-6o-JT6"/>
@@ -340,28 +338,60 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" text="Code for this app is available freely from https://github.com/tei06398/VisiStick" textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bfc-P1-een">
-                                <rect key="frame" x="40" y="154" width="240" height="69"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VaW-oS-cA7">
+                                <rect key="frame" x="87" y="110" width="146" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="9Fb-ti-Dv2"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                <state key="normal" title="Email Support"/>
+                                <connections>
+                                    <action selector="sendMail:" destination="Ux1-4k-1DV" eventType="touchUpInside" id="BhJ-O2-4sh"/>
+                                </connections>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="Code for this app is available freely from https://github.com/tei06398/VisiStick" textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bfc-P1-een">
+                                <rect key="frame" x="40" y="232" width="239" height="69"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="69" id="igv-UT-vo4"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" text="This app makes use of open source code by Trevor Beaton of Vanguard Logic LLC." textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8bC-TI-rA2">
-                                <rect key="frame" x="40" y="237" width="240" height="69"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="This app makes use of open source code by Trevor Beaton of Vanguard Logic LLC." textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8bC-TI-rA2">
+                                <rect key="frame" x="40" y="315" width="239" height="69"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="VaW-oS-cA7" firstAttribute="centerX" secondItem="GjX-Gi-x7x" secondAttribute="centerX" id="3J1-0a-20h"/>
+                            <constraint firstItem="bfc-P1-een" firstAttribute="leading" secondItem="8bC-TI-rA2" secondAttribute="leading" id="3wN-em-xTu"/>
+                            <constraint firstItem="U4h-6o-JT6" firstAttribute="top" secondItem="8bC-TI-rA2" secondAttribute="bottom" constant="140" id="Fju-w3-qCg"/>
+                            <constraint firstItem="8bC-TI-rA2" firstAttribute="top" secondItem="bfc-P1-een" secondAttribute="bottom" constant="14" id="aig-lg-D8L"/>
+                            <constraint firstItem="VaW-oS-cA7" firstAttribute="centerX" secondItem="bfc-P1-een" secondAttribute="centerX" id="bwc-zO-Kea"/>
+                            <constraint firstItem="bfc-P1-een" firstAttribute="leading" secondItem="GjX-Gi-x7x" secondAttribute="leadingMargin" constant="24" id="dW3-nM-Bfn"/>
+                            <constraint firstItem="bfc-P1-een" firstAttribute="trailing" secondItem="8bC-TI-rA2" secondAttribute="trailing" id="f9M-7f-jM0"/>
+                            <constraint firstItem="bfc-P1-een" firstAttribute="top" secondItem="VaW-oS-cA7" secondAttribute="bottom" constant="92" id="vhA-IX-mhX"/>
+                            <constraint firstItem="VaW-oS-cA7" firstAttribute="leading" secondItem="GjX-Gi-x7x" secondAttribute="leadingMargin" constant="71" id="wjG-Dr-ZwD"/>
+                            <constraint firstItem="VaW-oS-cA7" firstAttribute="top" secondItem="4t9-C6-rgt" secondAttribute="bottom" constant="46" id="zcC-yV-Mi0"/>
+                        </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Credits" id="t1w-nJ-1bf"/>
+                    <toolbarItems>
+                        <barButtonItem title="Debug" id="Gd6-vy-kMJ">
+                            <connections>
+                                <segue destination="rqR-l6-gDb" kind="show" id="4hh-KR-pJF"/>
+                            </connections>
+                        </barButtonItem>
+                    </toolbarItems>
+                    <navigationItem key="navigationItem" title="Support and Credits" id="t1w-nJ-1bf"/>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="v36-gl-jHA" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1098.75" y="751.05633802816897"/>
+            <point key="canvasLocation" x="228.75" y="750"/>
         </scene>
     </scenes>
 </document>

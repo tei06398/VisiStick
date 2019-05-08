@@ -9,7 +9,7 @@
 import UIKit
 import AVFoundation
 
-class InfoViewController: UIViewController {
+class DebugViewController: UIViewController {
     var audioPlayer = AVAudioPlayer()
     var beep = Bundle.main.path(forResource: "beep", ofType: "mp3")
     

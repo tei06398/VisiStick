@@ -21,7 +21,7 @@
 		3FD310342261080F0012EE29 /* UUIDKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FD310332261080F0012EE29 /* UUIDKey.swift */; };
 		3FD31036226108140012EE29 /* UartModuleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FD31035226108140012EE29 /* UartModuleViewController.swift */; };
 		3FF4B0112256778E00B58DA8 /* SupportViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FF4B0102256778E00B58DA8 /* SupportViewController.swift */; };
-		3FF4B013225677A200B58DA8 /* InfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FF4B012225677A200B58DA8 /* InfoViewController.swift */; };
+		3FF4B013225677A200B58DA8 /* DebugViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FF4B012225677A200B58DA8 /* DebugViewController.swift */; };
 		5D8CFAA322823435002C0809 /* UartModuleCleanViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D8CFAA222823435002C0809 /* UartModuleCleanViewController.swift */; };
 		5D92C7892278FF1600E15D8F /* 1550hz.wav in Resources */ = {isa = PBXBuildFile; fileRef = 5D92C7792278FF1300E15D8F /* 1550hz.wav */; };
 		5D92C78A2278FF1600E15D8F /* 900hz.wav in Resources */ = {isa = PBXBuildFile; fileRef = 5D92C77A2278FF1300E15D8F /* 900hz.wav */; };
@@ -79,7 +79,7 @@
 		3FD310332261080F0012EE29 /* UUIDKey.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UUIDKey.swift; sourceTree = "<group>"; };
 		3FD31035226108140012EE29 /* UartModuleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UartModuleViewController.swift; sourceTree = "<group>"; };
 		3FF4B0102256778E00B58DA8 /* SupportViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SupportViewController.swift; sourceTree = "<group>"; };
-		3FF4B012225677A200B58DA8 /* InfoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InfoViewController.swift; sourceTree = "<group>"; };
+		3FF4B012225677A200B58DA8 /* DebugViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DebugViewController.swift; sourceTree = "<group>"; };
 		5D8CFAA222823435002C0809 /* UartModuleCleanViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UartModuleCleanViewController.swift; sourceTree = "<group>"; };
 		5D92C7792278FF1300E15D8F /* 1550hz.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = 1550hz.wav; sourceTree = "<group>"; };
 		5D92C77A2278FF1300E15D8F /* 900hz.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = 900hz.wav; sourceTree = "<group>"; };
@@ -186,7 +186,7 @@
 				3FC3E39A224BF6020008DE34 /* Assets.xcassets */,
 				3FC3E39C224BF6020008DE34 /* LaunchScreen.storyboard */,
 				3FC3E39F224BF6020008DE34 /* Info.plist */,
-				3FF4B012225677A200B58DA8 /* InfoViewController.swift */,
+				3FF4B012225677A200B58DA8 /* DebugViewController.swift */,
 				5D8CFAA222823435002C0809 /* UartModuleCleanViewController.swift */,
 			);
 			path = VisiStick;
@@ -366,7 +366,7 @@
 				3FC3E394224BF6020008DE34 /* AppDelegate.swift in Sources */,
 				3FD31036226108140012EE29 /* UartModuleViewController.swift in Sources */,
 				3FD31030226107110012EE29 /* BLECentralViewController.swift in Sources */,
-				3FF4B013225677A200B58DA8 /* InfoViewController.swift in Sources */,
+				3FF4B013225677A200B58DA8 /* DebugViewController.swift in Sources */,
 				3FF4B0112256778E00B58DA8 /* SupportViewController.swift in Sources */,
 				5D8CFAA322823435002C0809 /* UartModuleCleanViewController.swift in Sources */,
 				3FD310322261080B0012EE29 /* PeripheralTableViewCell.swift in Sources */,
