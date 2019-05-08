@@ -31,6 +31,7 @@ class BLECentralViewController : UIViewController, CBCentralManagerDelegate, CBP
     var characteristicValue = [CBUUID: NSData]()
     var timer = Timer()
     var characteristics = [String : CBCharacteristic]()
+    var autoconnectContinue : Bool = true
     
     //UI
     @IBOutlet weak var baseTableView: UITableView!
@@ -41,6 +42,7 @@ class BLECentralViewController : UIViewController, CBCentralManagerDelegate, CBP
         self.peripherals = []
         self.RSSIs = []
         self.baseTableView.reloadData()
+        autoconnectContinue = false;
         startScanNoAutoConnect()
     }
     
@@ -78,7 +80,7 @@ class BLECentralViewController : UIViewController, CBCentralManagerDelegate, CBP
         print("Now Scanning...")
         self.timer.invalidate()
         centralManager?.scanForPeripherals(withServices: [BLEService_UUID] , options: [CBCentralManagerScanOptionAllowDuplicatesKey:false])
-        Timer.scheduledTimer(timeInterval: 5, target: self, selector: #selector(self.cancelScan), userInfo: nil, repeats: false)
+        Timer.scheduledTimer(timeInterval: 2, target: self, selector: #selector(self.cancelScan), userInfo: nil, repeats: false)
     }
     
     func startScanNoAutoConnect() {
@@ -97,9 +99,11 @@ class BLECentralViewController : UIViewController, CBCentralManagerDelegate, CBP
         print("Peripheral Names:")
         for p in peripherals {
             print(p.name)
-            if p.name == "VisiStick" {
+            if p.name == "VisiStick" && self.autoconnectContinue {
                 blePeripheral = p
                 connectToDevice()
+            } else if p.name == "VisiStick" {
+                print("Autoconnect Cancelled by Refresh")
             }
         }
     }
