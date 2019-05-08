@@ -41,7 +41,7 @@ class BLECentralViewController : UIViewController, CBCentralManagerDelegate, CBP
         self.peripherals = []
         self.RSSIs = []
         self.baseTableView.reloadData()
-        startScan()
+        startScanNoAutoConnect()
     }
     
     override func viewDidLoad() {
@@ -81,6 +81,14 @@ class BLECentralViewController : UIViewController, CBCentralManagerDelegate, CBP
         Timer.scheduledTimer(timeInterval: 5, target: self, selector: #selector(self.cancelScan), userInfo: nil, repeats: false)
     }
     
+    func startScanNoAutoConnect() {
+        peripherals = []
+        print("Now Scanning (No Autoconnect)...")
+        self.timer.invalidate()
+        centralManager?.scanForPeripherals(withServices: [BLEService_UUID] , options: [CBCentralManagerScanOptionAllowDuplicatesKey:false])
+        Timer.scheduledTimer(timeInterval: 5, target: self, selector: #selector(self.cancelScanNoAutoConnect), userInfo: nil, repeats: false)
+    }
+    
     /*We also need to stop scanning at some point so we'll also create a function that calls "stopScan"*/
     func cancelScan() {
         self.centralManager?.stopScan()
@@ -90,11 +98,16 @@ class BLECentralViewController : UIViewController, CBCentralManagerDelegate, CBP
         for p in peripherals {
             print(p.name)
             if p.name == "VisiStick" {
-                print("t")
                 blePeripheral = p
                 connectToDevice()
             }
         }
+    }
+    
+    func cancelScanNoAutoConnect() {
+        self.centralManager?.stopScan()
+        print("Scan Stopped")
+        print("Number of Peripherals Found: \(peripherals.count)")
     }
     
     func refreshScanView() {
